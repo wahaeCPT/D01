@@ -6,9 +6,10 @@
 #    By: wkoela <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/07/08 13:59:51 by wkoela            #+#    #+#              #
-#    Updated: 2020/07/08 14:08:43 by wkoela           ###   ########.fr        #
+#    Updated: 2020/07/09 08:57:46 by wkoela           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
-( find . -type d && find . -type f ) | wc -1
+( find . -type d && find . -type f ) | ls | wc -1
+	
 #end
