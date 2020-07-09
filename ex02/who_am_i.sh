@@ -6,10 +6,10 @@
 #    By: wkoela <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/07/08 12:00:39 by wkoela            #+#    #+#              #
-#    Updated: 2020/07/08 12:26:58 by wkoela           ###   ########.fr        #
+#    Updated: 2020/07/09 09:02:16 by wkoela           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
+#
 name='whoami'
 
-ldapsearch -x -L "(uid=$name)" dn | grep '^dn:' | cut -c5-19
+ldapsearch -x  "(uid=$name)" dn | grep '^dn:' | cut -c5-999
