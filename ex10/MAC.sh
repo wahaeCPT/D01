@@ -6,10 +6,11 @@
 #    By: wkoela <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/07/08 14:27:42 by wkoela            #+#    #+#              #
-#    Updated: 2020/07/08 14:43:32 by wkoela           ###   ########.fr        #
+#    Updated: 2020/07/09 08:54:48 by wkoela           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#!bin/bash
-ifconfig | grep ether | cut -d " " -f 2
-#end
+
+find . -name "*.sh" -exec basename {} + | sed 's/...$//
+
+
